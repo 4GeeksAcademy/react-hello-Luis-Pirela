@@ -10,3 +10,26 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.jumbotron {
+    background-color:rgb(233, 233, 233);
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+}
+.navbar {
+}
+.card-img-top {
+    object-fit: cover;
+}
+.container {
+    max-width: 1200px;
+    
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-link{
+    
+}
