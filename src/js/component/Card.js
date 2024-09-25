@@ -16,12 +16,18 @@ function Card({ title, text, imgSrc }) {
 function CardsList() {
   const cardsData = [
     { title: "Card Title", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nulla aliquid animi culpa aspernatur magni numquam a fugit neque! Animi distinctio deserunt explicabo eaque perspiciatis, recusandae maxime ex tempora doloremque." , imgSrc: "https://via.placeholder.com/500x325" },
-    { title: "Card Title", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nulla aliquid animi culpa aspernatur magni numquam a fugit neque! Animi distinctio deserunt explicabo eaque perspiciatis, recusandae maxime ex tempora doloremque." , imgSrc: "https://via.placeholder.com/500x325" },
-    { title: "Card Title", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nulla aliquid animi culpa aspernatur magni numquam a fugit neque! Animi distinctio deserunt explicabo eaque perspiciatis, recusandae maxime ex tempora doloremque." , imgSrc: "https://via.placeholder.com/500x325" },
-    { title: "Card Title", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nulla aliquid animi culpa aspernatur magni numquam a fugit neque! Animi distinctio deserunt explicabo eaque perspiciatis, recusandae maxime ex tempora doloremque." , imgSrc: "https://via.placeholder.com/500x325" }
   ];
   return (
     <div className="row">
+      {cardsData.map((card, index) => (
+        <Card key={index} title={card.title} text={card.text} imgSrc={card.imgSrc} />
+      ))}
+      {cardsData.map((card, index) => (
+        <Card key={index} title={card.title} text={card.text} imgSrc={card.imgSrc} />
+      ))}
+      {cardsData.map((card, index) => (
+        <Card key={index} title={card.title} text={card.text} imgSrc={card.imgSrc} />
+      ))}
       {cardsData.map((card, index) => (
         <Card key={index} title={card.title} text={card.text} imgSrc={card.imgSrc} />
       ))}

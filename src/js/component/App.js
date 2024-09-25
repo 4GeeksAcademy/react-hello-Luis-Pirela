@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="d-flex flex-column min-vh-100">
       <Navbar />
-      <div className="container mt-5">
+      <div className="container mt-5 p-0">
         <Jumbotron />
         <CardsList />
       </div>
